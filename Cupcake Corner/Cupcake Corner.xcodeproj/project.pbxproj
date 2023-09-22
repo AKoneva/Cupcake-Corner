@@ -11,7 +11,9 @@
 		044607C62ABC37060028947E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044607C52ABC37060028947E /* ContentView.swift */; };
 		044607C82ABC37090028947E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044607C72ABC37090028947E /* Assets.xcassets */; };
 		044607CB2ABC37090028947E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044607CA2ABC37090028947E /* Preview Assets.xcassets */; };
-		044607D22ABC37B70028947E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044607D12ABC37B70028947E /* UserModel.swift */; };
+		044607D62ABC4DA40028947E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044607D52ABC4DA40028947E /* Order.swift */; };
+		044607D92ABC4E680028947E /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044607D82ABC4E680028947E /* AddressView.swift */; };
+		044607DB2ABC4F750028947E /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044607DA2ABC4F750028947E /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +22,9 @@
 		044607C52ABC37060028947E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		044607C72ABC37090028947E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044607CA2ABC37090028947E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		044607D12ABC37B70028947E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		044607D52ABC4DA40028947E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		044607D82ABC4E680028947E /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		044607DA2ABC4F750028947E /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +41,6 @@
 		044607B72ABC37060028947E = {
 			isa = PBXGroup;
 			children = (
-				044607D12ABC37B70028947E /* UserModel.swift */,
 				044607C22ABC37060028947E /* Cupcake Corner */,
 				044607C12ABC37060028947E /* Products */,
 			);
@@ -54,8 +57,9 @@
 		044607C22ABC37060028947E /* Cupcake Corner */ = {
 			isa = PBXGroup;
 			children = (
-				044607C32ABC37060028947E /* Cupcake_CornerApp.swift */,
-				044607C52ABC37060028947E /* ContentView.swift */,
+				044607D72ABC4DBA0028947E /* Views */,
+				044607D42ABC4D990028947E /* Model */,
+				044607D32ABC4D900028947E /* App */,
 				044607C72ABC37090028947E /* Assets.xcassets */,
 				044607C92ABC37090028947E /* Preview Content */,
 			);
@@ -68,6 +72,32 @@
 				044607CA2ABC37090028947E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		044607D32ABC4D900028947E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				044607C32ABC37060028947E /* Cupcake_CornerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		044607D42ABC4D990028947E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				044607D52ABC4DA40028947E /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044607D72ABC4DBA0028947E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				044607C52ABC37060028947E /* ContentView.swift */,
+				044607D82ABC4E680028947E /* AddressView.swift */,
+				044607DA2ABC4F750028947E /* CheckoutView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044607D62ABC4DA40028947E /* Order.swift in Sources */,
+				044607D92ABC4E680028947E /* AddressView.swift in Sources */,
+				044607DB2ABC4F750028947E /* CheckoutView.swift in Sources */,
 				044607C62ABC37060028947E /* ContentView.swift in Sources */,
-				044607D22ABC37B70028947E /* UserModel.swift in Sources */,
 				044607C42ABC37060028947E /* Cupcake_CornerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
